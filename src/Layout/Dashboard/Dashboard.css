@@ -1,0 +1,330 @@
+/* Dashboard Layout */
+.container .dashboard {
+  padding: 0;
+  padding-right: 4rem;
+  padding-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.row-first {
+  display: flex;
+  flex-direction: row;
+}
+
+.row-second {
+  display: flex;
+  flex-direction: row;
+  margin-top: 3rem;
+}
+
+.row-third {
+  display: flex;
+  flex-direction: row;
+  margin-top: 2rem;
+}
+
+/* Reusable contents */
+.text-grey-small {
+  color: var(--color-grey-light);
+  font-size: 1.3rem;
+  margin-top: 0.6rem;
+}
+
+.card-heading-small {
+  font-weight: 400;
+  font-size: 1.5rem;
+  margin-bottom: 0.8rem;
+}
+
+/* ------------------------------------- */
+/* FIRST ROW STYLES */
+/* ------------------------------------- */
+
+/* Invoice all cards */
+.invoices-all {
+  flex-basis: 48%;
+}
+
+.revenue {
+  flex-grow: 1;
+}
+
+.card-container {
+  display: inline-block;
+  justify-content: space-between;
+  padding: 1.2rem;
+}
+
+.card-container:first-of-type {
+  padding-left: 0;
+}
+
+.invoice-amount,
+.card-heading-big {
+  font-size: 2.2rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+.invoice-state {
+  color: var(--color-grey-light);
+  font-size: 1.3rem;
+  margin-top: 0.6rem;
+}
+
+/* Revenue styles */
+
+.revenue-content {
+  margin-top: 2rem;
+  display: flex;
+  align-items: baseline;
+}
+
+/* Progress Bar Styles */
+
+.progress-bar-container {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 55%;
+}
+
+.progress-bar {
+  height: 2rem;
+  border-radius: 4px;
+  overflow: hidden;
+  margin-right: 1rem;
+}
+
+.progress-bar--progress {
+  height: 100%;
+  width: 40%;
+  background-color: var(--color-dark);
+  border-radius: 4px;
+}
+
+.revenue-overdue {
+  color: var(--color-grey-light);
+  font-size: 1.3rem;
+  margin-top: 1.6rem;
+}
+
+.total-revenue {
+  margin-right: 6rem;
+}
+
+/* Search styles */
+.search-icon {
+  height: 1.8rem;
+  width: 1.8rem;
+  cursor: pointer;
+}
+
+/* ------------------------------------- */
+/* SECOND ROW STYLES */
+/* ------------------------------------- */
+
+/* Profit Styles */
+.total-profit {
+  flex-basis: 35%;
+  margin-right: 8rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* Profit components styles */
+
+.profit-count {
+  padding: 2.5rem 4rem 4rem 2.5rem;
+}
+.profit-component {
+  margin: 0.8rem;
+}
+
+.profit-component--icon {
+  height: 0.8rem;
+  width: 0.8rem;
+}
+
+.profit-component--value {
+  font-size: 1.4rem;
+  display: inline-block;
+  margin-left: 0.8rem;
+}
+
+/* Expenses components styles */
+.expenses {
+  flex: 1;
+  padding-right: 5.5rem;
+}
+
+.expenses-card-container {
+  display: flex;
+}
+
+.expenses-card {
+  flex-basis: 33%;
+  display: flex;
+  flex-direction: column;
+  margin: 2rem 1.5rem;
+  padding: 0.5rem;
+}
+
+.expenses-card-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.expenses-card-heading {
+  font-size: 1.7rem;
+}
+
+.decimal-amount {
+  font-size: 1.4rem;
+}
+
+.expenses-head-icon {
+  height: 1.5rem;
+  width: 1.5rem;
+  fill: var(--color-grey-light);
+}
+
+.expenses-date {
+  color: var(--color-grey-light);
+  font-size: 1.2rem;
+}
+
+.expenses-card-body {
+  margin-top: 2rem;
+}
+
+.expense-company-logo {
+  height: 5.5rem;
+  width: 5.5rem;
+}
+
+.expense-work {
+  display: block;
+  font-size: 1.4rem;
+  margin-top: 0.5rem;
+}
+
+/* ------------------------------------- */
+/* THIRD ROW STYLES */
+/* ------------------------------------- */
+
+.invoices-recent {
+  flex-basis: 60%;
+}
+
+.invoice-upload {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 10rem;
+  height: 10rem;
+  border: 1px dashed var(--color-grey-light);
+  margin-top: 1.5rem;
+}
+
+.invoice-upload-box {
+  height: 4rem;
+  width: 4rem;
+}
+
+.upload-text {
+  font-size: 1rem;
+  margin-top: 0.5rem;
+}
+
+.recent-invoices-container {
+  display: flex;
+  margin-top: 0.5rem;
+}
+
+/* Recent invoices cards */
+.invoices-recent-content {
+  display: flex;
+  justify-content: space-around;
+}
+
+.recent-invoice-card {
+  margin-top: 1rem;
+  position: relative;
+  padding-top: 0;
+  margin-right: 2rem;
+  flex: 1;
+}
+
+.recent-invoice-details {
+  padding: 1rem 2rem;
+}
+
+.recent-invoice-details::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 2px;
+  height: 45%;
+  background-color: var(--color-sea-green-light);
+}
+
+.recent-invoice-id {
+  color: var(--color-grey-light);
+  font-size: 1.2rem;
+}
+
+.recent-invoice-name {
+  font-size: 1.5rem;
+}
+
+.recent-invoice-date {
+  font-size: 1.2rem;
+  color: var(--color-grey-light);
+}
+
+.recent-invoice-status {
+  margin-top: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.recent-invoice-state {
+  font-size: 1.2rem;
+}
+
+.recent-invoice-amount {
+  font-size: 1.2rem;
+}
+
+/* Advertisement styles */
+.ad {
+  flex-basis: 40%;
+  height: 16rem;
+  width: 100%;
+  margin-left: 1.5rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s;
+  padding: 2rem;
+  padding-right: 12rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.ad:hover {
+  transform: scale(1.02);
+}
+
+.invoicer-apps {
+  font-size: 1.8rem;
+  color: var(--color-white);
+  margin-top: 0.5rem;
+}

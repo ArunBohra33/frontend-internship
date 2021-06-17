@@ -1,0 +1,87 @@
+/* ------------------------------------------ */
+/* BASIC RESET */
+/* ------------------------------------------ */
+
+:root {
+  --color-white: #fefefe;
+  --color-orange: #fb9600;
+  --color-sea-green-light: #6fa89a;
+
+  --color-blue-light: #c0e8ff;
+  --color-green-light: #d1ffd5;
+
+  --color-dark: #000000;
+
+  --color-grey-dark: #4c4c4c;
+  --color-grey-light: #b5b5b5;
+
+  --card-1: #f0f4ff;
+  --card-2: #eefcef;
+  --card-3: #e5f5fa;
+
+  --shadow-light: 0.5rem 0 2rem rgba(0, 0, 0, 0.2);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%; /* This makes 1rem = 10px */
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 2rem;
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+  line-height: 1.5;
+  background-color: var(--color-white);
+  color: var(--color-dark);
+  text-rendering: optimizeLegibility;
+}
+
+/* ------------------------------------------ */
+/* REUSABLE CONTENT */
+/* ------------------------------------------ */
+
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+/* ------------------------------------------ */
+/* LAYOUT STYLES */
+/* ------------------------------------------ */
+
+.container {
+  display: flex;
+}
+
+.workspace,
+.workspace-container {
+  flex-basis: 5%;
+}
+
+.sidebar {
+  flex-basis: 20%;
+  color: #000;
+  padding: 5rem 4rem;
+  padding-bottom: 3rem;
+}
+
+.sidebar-container {
+  flex-basis: 20%;
+  background-color: var(--color-white);
+}
+
+.dashboard,
+.clients,
+.invoices,
+.estimates,
+.my-team {
+  flex-grow: 1;
+  padding: 5rem;
+}

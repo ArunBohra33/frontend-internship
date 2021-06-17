@@ -1,0 +1,15 @@
+@media only screen and (max-height: 500px) {
+  .sidebar__settings-list {
+    margin-top: -4rem;
+  }
+
+  .sidebar__user-nav--icon {
+    margin-right: 2rem;
+  }
+}
+
+@media only screen and (max-height: 460px) {
+  .sidebar__settings-list {
+    margin-top: -5.5rem;
+  }
+}

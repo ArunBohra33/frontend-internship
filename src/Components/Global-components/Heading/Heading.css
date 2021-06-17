@@ -1,0 +1,22 @@
+.heading {
+  display: flex;
+  align-items: center;
+}
+
+.heading-text {
+  align-self: flex-start;
+  font-size: 2rem;
+}
+
+.heading-summary {
+  margin-right: auto;
+  margin-left: 1.5rem;
+  color: var(--color-grey-light);
+  font-size: 1.3rem;
+}
+
+.heading--icon {
+  height: 1.5rem;
+  width: 1.5rem;
+  cursor: pointer;
+}

@@ -1,0 +1,162 @@
+@media only screen and (max-width: 1150px) {
+  html {
+    font-size: 60%;
+  }
+
+  .workspace,
+  .workspace-container {
+    display: none;
+  }
+
+  .container .dashboard {
+    padding-left: 4rem;
+    padding-right: 1rem;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  html {
+    font-size: 58%;
+  }
+
+  .row-first,
+  .row-second,
+  .row-third {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    padding: 1rem;
+  }
+
+  .all-invoice-cards {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .all-invoice-cards > * {
+    margin-right: 4rem;
+  }
+
+  .revenue {
+    margin-top: 2rem;
+  }
+
+  .total-profit {
+    margin: 0;
+  }
+
+  .expenses {
+    padding: 0;
+  }
+
+  .expenses-card {
+    margin: 2rem 1.5rem 2rem 0;
+  }
+
+  .invoices-recent-content {
+    justify-content: space-between;
+  }
+
+  .invoice-upload {
+    padding: 1rem;
+  }
+
+  .upload-text {
+    text-align: center;
+  }
+
+  .recent-invoices-container {
+    flex: 1;
+    margin: 1rem 0 1rem 2rem;
+  }
+
+  .ad {
+    margin: 0;
+    padding: 5rem 2rem 5rem 5rem;
+    margin-top: 4rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  html {
+    font-size: 58%;
+  }
+
+  /* Mobile navbar styles */
+  .sidebar,
+  .sidebar-container {
+    position: fixed;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    background-color: var(--color-grey-light);
+    box-shadow: var(--shadow-light);
+    height: 6rem;
+    padding: 0.5rem;
+    padding-top: 1.5rem;
+    bottom: 0;
+    left: 0;
+    z-index: 9999;
+  }
+
+  .sidebar__user-profile,
+  .sidebar__user-profile .sidebar__user-profile--greeting,
+  .sidebar__user-profile .sidebar__user-profile--name {
+    display: none;
+  }
+
+  .sidebar__user-nav--list-list-item {
+    padding: 0;
+  }
+
+  .sidebar__user-nav--icon {
+    height: 3rem;
+    width: 3rem;
+  }
+
+  .sidebar__main-user-nav {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    justify-content: space-around;
+    margin: 0;
+  }
+
+  .sidebar__user-profile--img {
+    height: 3rem;
+    width: 3rem;
+    margin: 0;
+  }
+
+  .nav-list-name {
+    display: none;
+  }
+
+  .sidebar__user-nav-list {
+    flex-direction: row;
+    flex-basis: 70%;
+  }
+
+  .sidebar__settings--icon {
+    fill: var(--color-dark);
+    height: 3rem;
+    width: 3rem;
+  }
+
+  /* Mobile navbar styles */
+
+  .card-container {
+    padding: 0;
+    margin-right: 2rem;
+  }
+
+  .profit-count {
+    padding: 1.5rem;
+  }
+
+  .invoice-amount {
+    font-size: 1.6rem;
+  }
+}
