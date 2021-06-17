@@ -1,8 +1,11 @@
 ### Your full name : 
-My name goes here.
+Arun Bohra
+
 ### Your Linkedin Profile URL:
-My profile URL goes here
+https://www.linkedin.com/in/arun-bohra-a24631210/
+
 ### Screenshots:
-Put screenshots of what you designed here
+https://drive.google.com/file/d/1revjpNG-MzyYS__KDY1INtpU3tGoA6Ck/view?usp=sharing <-- link to the screenshot
+
 ### Problems faced during making the assignment
-Describe any problems faced
+No problems were faced.
